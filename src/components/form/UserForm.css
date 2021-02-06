@@ -1,0 +1,28 @@
+.fullWidthContainer:before,
+.fullWidthContainer:after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+    z-index: 2;
+    position: absolute;
+}
+
+.fullWidthContainer:before {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.MuiInputLabel-formControl {
+    font-size: 15px !important;
+}
+
+label.Mui-error{
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+
+.Mui-error svg {
+    color: #da4a40;
+}
