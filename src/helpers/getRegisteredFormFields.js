@@ -601,7 +601,7 @@ export const getRegisteredFormField = {
         type:       'select',
         label:      'Requesting Department *',
         icon:       BookmarksIcon,
-        labelWidth: 130,
+        labelWidth: 175,
         validate: {
             required: true,
         },

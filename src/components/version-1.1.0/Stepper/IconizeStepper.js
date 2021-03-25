@@ -40,7 +40,7 @@ const StepStyleConnector = withStyles({
     },
 })(StepConnector);
 
-const useStyles = makeStyles((theme) => ({
+export const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
         flexWrap: 'wrap',
@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '30px',
         padding: '20px',
         [theme.breakpoints.down('xs')]: {
-        padding: 0,
+            padding: 0,
         },
     },
     button: {
@@ -77,9 +77,7 @@ const useStyles = makeStyles((theme) => ({
         padding: '0px',
     },
     stepper: {
-        [theme.breakpoints.down('sm')]: {
-            
-        }
+        [theme.breakpoints.down('sm')]: {}
     },
     stepContentWrapper: {
       minHeight: 'calc(100vh - 90% )',

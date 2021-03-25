@@ -6,8 +6,10 @@ import { NonJobRelatedFormFieldList } from './NonJobRelatedFormFieldList';
 function AddFinanceRequestForNonJobRelatedForm() {
     
     return <FormTemplate
-        title="Add Finance Request | Non Job Related"
+        title="Add Finance Request"
         formFieldsList={NonJobRelatedFormFieldList}
+        line={false}
+        header={false}
     />;
 }
 

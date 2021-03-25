@@ -16,7 +16,8 @@ const useStyles = makeStyles((theme) => ({
     color: '#fff',
     borderRadius: '3px 3px 0px 0px',
     background: 'linear-gradient(60deg, #61979e, #6ca4aa)',
-    boxShadow: '0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(66 148 157 / 40%)',
+    // boxShadow: '0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(66 148 157 / 40%)',
+    boxShadow: 'none',
   },
   titleArrow: {
     fontSize: '22px',
@@ -25,12 +26,12 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-function StepperTitle({ title, steps, activeStep }) {
+function StepperTitle({ title, steps, activeStep, description = null }) {
     const classes         = useStyles();
-    const stepDescription = steps?.[ activeStep ];
+    const stepDescription = steps?.[ activeStep ] ?? description;
 
     return (
-        <Paper className={classes.paper} elevation={3}>
+        <Paper className={classes.paper} elevation={0}>
             <div className={classes.description}>
                 {title} 
                 {typeof stepDescription === 'string' && 

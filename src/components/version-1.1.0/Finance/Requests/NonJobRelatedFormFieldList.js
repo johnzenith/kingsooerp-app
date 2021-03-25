@@ -1,9 +1,11 @@
 import React from 'react';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 import { getRegisteredFormField } from '../../../../helpers/getRegisteredFormFields';
-import FlexBoxGrow from '../Flexbox/FlexBoxGrow';
+import FlexBoxGrow from '../../Flexbox/FlexBoxGrow';
 import MainButton from '../../Button/MainButton';
 import UploadButton from '../../Button/UploadButton';
+
 
 /**
  * Add Finance Request form - non job related
@@ -11,7 +13,7 @@ import UploadButton from '../../Button/UploadButton';
 export const NonJobRelatedFormFieldList = [
     {
         formID    : 'addFinanceRequestNonJobRelated',
-        formTitle : 'Add Finance Request | Non - Job Related',
+        formTitle : 'Add Finance Request',
         fields    : [
             [
                 {
@@ -33,7 +35,7 @@ export const NonJobRelatedFormFieldList = [
                     id: 'financeRequestInvoice',
                     name: 'financeRequestInvoice',
                     label: 'Invoice Number *',
-                    labelWidth: 100,
+                    labelWidth: 120,
                     validate: {
                         required: true,
                         minlength: 4,
@@ -63,7 +65,7 @@ export const NonJobRelatedFormFieldList = [
                     id: 'financeRequestPaymentValue',
                     name: 'financeRequestPaymentValue',
                     label: 'Payment Value *',
-                    labelWidth: 80,
+                    labelWidth: 120,
                     validate: {
                         minlength: 1,
                         maxlength: 20,
@@ -88,9 +90,9 @@ export const NonJobRelatedFormFieldList = [
                                     name="financeProofOfInvoice"
                                     id="financeProofOfInvoice"
                                     label="Upload Proforma Invoice"
-
                                     {...props}
                                 />,
+
                                 <MainButton
                                     label="Submit"
                                     {...props}

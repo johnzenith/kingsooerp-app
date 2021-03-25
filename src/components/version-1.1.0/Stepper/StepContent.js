@@ -4,7 +4,6 @@ import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 
 function StepContent({ activeStep, steps, contents }) {
-
   const classes = makeStyles(() => ({
     formContent: { 
       padding: '0px',
