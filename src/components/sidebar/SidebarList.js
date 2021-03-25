@@ -245,6 +245,7 @@ export default function SidebarList({ isMobileMenu = false }) {
 
                     {toggleHumanResourceListIcon}
                 </ListItem>
+
                 <Collapse style={{ marginTop: '20px' }} in={open['humanResourceList']} timeout="auto" unmountOnExit>
                     <List component="div" disablePadding>
                         <ListItem 
@@ -261,6 +262,7 @@ export default function SidebarList({ isMobileMenu = false }) {
                         </ListItem>
                     </List>
                 </Collapse>
+                
             </List>
         </div>
     );

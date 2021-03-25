@@ -14,6 +14,8 @@ import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
 import ReceiptIcon from '@material-ui/icons/Receipt';
 import HistoryIcon from '@material-ui/icons/History';
 
+import AddEmployeeForm from './../version-1.1.0/EmployeeManagement/AddEmployeeForm';
+
 const cardItems = [
     {
         cardIcon: <PeopleAltIcon />,
@@ -65,9 +67,12 @@ export default function DashboardContent() {
 
     return (
         <div>
+
+            {false && <AddEmployeeForm />}
+
             <Switch>
                 <Route exact path="/human-resource/dashboard" component={RenderDashboardCard} />
-                <Route path="/human-resource/employees-management" component={EmployeesManagement} />
+                <Route path="/human-resource/employees-management" component={AddEmployeeForm} />
                 <Route 
                     render={() => <Redirect to="/human-resource/dashboard" />}
                 />

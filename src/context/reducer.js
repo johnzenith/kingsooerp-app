@@ -1,3 +1,5 @@
+import { EmployeeFormFieldsList } from './../components/version-1.1.0/EmployeeManagement/EmployeeFormFieldsList';
+
 export const initialState = {
     user: null,
     formData: {
@@ -35,6 +37,8 @@ export const initialState = {
         bottom: false,
         right: false,
     },
+
+    employeeFormList: EmployeeFormFieldsList,
 };
 
 export const actionTypes = {
@@ -54,6 +58,8 @@ export const actionTypes = {
     TOGGLE_DASHBOARD_DRAWER:       'isDashboardDrawerActive',
     SET_DISMISSIBLE_FORM_ALERT:    'dismissibleFormAlert',
     SET_EMPLOYEE_ALERT_VISIBILITY: 'employeeAlert',
+
+    SET_EMPLOYEE_FORM_LIST:        'employeeFormList',
 };
 
 /**

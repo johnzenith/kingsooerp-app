@@ -55,7 +55,7 @@ export const useStyles = makeStyles((theme) => ({
       padding: '20px 20px',
     },
   },
-   margin: {
+  margin: {
     margin: theme.spacing(0),
   },
   marginTop: {

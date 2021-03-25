@@ -37,8 +37,8 @@ export const FormGrid = ({ children }) => (
   </Grid>
 );
 
-export const FormGridItem = ({ children }) => (
-  <Grid item xs={12} sm={12} md={4} lg={4}>
+export const FormGridItem = ({ children, xs = 12, sm = 12, md = 4, lg = 4 }) => (
+  <Grid item xs={xs} sm={sm} md={md} lg={lg}>
     {children}
   </Grid>
 );

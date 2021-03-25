@@ -8,7 +8,7 @@ import ForgotPasswordForm from './form/ForgotPasswordForm';
 import Dashboard from './dashboard/Dashboard';
 import { 
     BrowserRouter as Router, 
-    Switch, 
+    Switch,
     Route,
     Redirect
 } from 'react-router-dom';
@@ -48,4 +48,4 @@ function App() {
     );
 }
 
-export default App;
+export default React.memo(App);

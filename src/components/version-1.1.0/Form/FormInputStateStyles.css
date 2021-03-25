@@ -1,0 +1,8 @@
+.is-readonly-input .MuiOutlinedInput-input,
+.is-readonly-input .MuiInputBase-formControl,
+.is-readonly-input .MuiOutlinedInput-adornedEnd,
+.is-disabled-input .MuiOutlinedInput-input,
+.is-disabled-input .MuiInputBase-formControl,
+.is-disabled-input .MuiOutlinedInput-adornedEnd {
+    cursor: not-allowed;
+}
