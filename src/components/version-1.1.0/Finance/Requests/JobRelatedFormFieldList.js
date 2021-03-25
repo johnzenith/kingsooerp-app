@@ -15,51 +15,60 @@ export const JobRelatedFormFieldList = [
         fields    : [
             [
                 {
-                    ...getRegisteredFormField.financeRequestDepartment,
+                    ...getRegisteredFormField.financeRequestClient,
                     md: 6,
                     lg: 6,
                 },
                 {
-                    ...getRegisteredFormField.financeRequestExpenseType,
-                    md: 6,
-                    lg: 6,
+                    ...getRegisteredFormField.text,
+                    md: 4,
+                    lg: 4,
+                    id: 'financeRequestPurchaseOrderNumberJobRelated',
+                    name: 'financeRequestPurchaseOrderNumberJobRelated',
+                    label: 'Purchase Order Number *',
+                    labelWidth: 180,
+                    validate: {
+                        required: true,
+                    }
                 },
             ],
             [
                 {
+                    ...getRegisteredFormField.financeRequestBuyingHouseOrOEM,
+                    md: 6,
+                    lg: 6,
+                },
+                {
                     ...getRegisteredFormField.text,
                     md: 6,
                     lg: 6,
-                    id: 'financeRequestInvoice',
-                    name: 'financeRequestInvoice',
-                    label: 'Invoice Number *',
-                    labelWidth: 120,
-                    validate: {
-                        required: true,
-                        minlength: 4,
-                        maxlength: 10,
-                    }
+                    id: 'financeRequestBillOfLadenOrMAWB',
+                    name: 'financeRequestBillOfLadenOrMAWB',
+                    label: 'Bill Of Laden / MAWB *',
+                    labelWidth: 140,
                 },
+            ],
+            [
                 {
-                    ...getRegisteredFormField.number,
+                    ...getRegisteredFormField.financeRequestExpenseType,
                     md: 6,
                     lg: 6,
-                    id: 'financeRequestQuantity',
-                    name: 'financeRequestQuanity',
-                    label: 'Quantity *',
-                    labelWidth: 80,
-                    validate: {
-                        required: true,
-                        minlength: 4,
-                        maxlength: 10,
-                    }
+                    id: 'financeRequestExpenseTypeJobRelated',
+                    name: 'financeRequestExpenseTypeJobRelated',
+                },
+                {
+                    ...getRegisteredFormField.financeRequestDepartment,
+                    md: 6,
+                    lg: 6,
+                    id: 'financeRequestDepartmentJobRelated',
+                    name: 'financeRequestDepartmentJobRelated',
                 },
             ],
             [
                 {
                     ...getRegisteredFormField.amountText,
-                    md: 6,
-                    lg: 6,
+                    md: 4,
+                    lg: 4,
                     id: 'financeRequestPaymentValue',
                     name: 'financeRequestPaymentValue',
                     label: 'Payment Value *',
@@ -72,8 +81,33 @@ export const JobRelatedFormFieldList = [
                 },
                 {
                     ...getRegisteredFormField.financeRequestPaymentRate,
-                    md: 6,
-                    lg: 6,
+                    md: 4,
+                    lg: 4,
+                    id: 'financeRequestPaymentRateJobRelated',
+                    name: 'financeRequestPaymentRateJobRelated',
+                },
+                {
+                    ...getRegisteredFormField.number,
+                    md: 4,
+                    lg: 4,
+                    id: 'financeRequestQuantityJobRelated',
+                    name: 'financeRequestQuanityJobRelated',
+                    label: 'Quantity *',
+                    labelWidth: 80,
+                    validate: {
+                        required: true,
+                    }
+                },
+            ],
+            [
+                {
+                    ...getRegisteredFormField.descriptionText,
+                    md: 4,
+                    lg: 4,
+                    id: 'financeRequestDescriptionJobRelated',
+                    name: 'financeRequestDescriptionJobRelated',
+                    label: 'Description *',
+                    labelWidth: 100,
                 },
             ],
             [
@@ -85,13 +119,16 @@ export const JobRelatedFormFieldList = [
                         <FlexBoxGrow 
                             items={[
                                 <UploadButton 
-                                    name="financeProofOfInvoice"
-                                    id="financeProofOfInvoice"
+                                    name="financeProformaInvoiceJobRelated"
+                                    id="financeProformaInvoiceJobRelated"
                                     label="Upload Proforma Invoice"
                                     {...props}
                                 />,
 
                                 <MainButton
+                                    icon={ArrowForwardIosIcon}
+                                    iconRight={true}
+                                    iconStyle={{ fontSize: '15px', margin: '0px 0px 0px 5px' }}
                                     label="Submit"
                                     {...props}
                                 />,

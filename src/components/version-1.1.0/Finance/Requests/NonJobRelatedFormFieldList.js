@@ -6,7 +6,6 @@ import FlexBoxGrow from '../../Flexbox/FlexBoxGrow';
 import MainButton from '../../Button/MainButton';
 import UploadButton from '../../Button/UploadButton';
 
-
 /**
  * Add Finance Request form - non job related
  */
@@ -17,53 +16,36 @@ export const NonJobRelatedFormFieldList = [
         fields    : [
             [
                 {
-                    ...getRegisteredFormField.financeRequestDepartment,
-                    md: 6,
-                    lg: 6,
+                    ...getRegisteredFormField.text,
+                    md: 4,
+                    lg: 4,
+                    id: 'financeRequestInvoiceNonJobRelated',
+                    name: 'financeRequestInvoiceNonJobRelated',
+                    label: 'Invoice Number *',
+                    labelWidth: 120,
                 },
                 {
                     ...getRegisteredFormField.financeRequestExpenseType,
-                    md: 6,
-                    lg: 6,
-                },
-            ],
-            [
-                {
-                    ...getRegisteredFormField.text,
-                    md: 6,
-                    lg: 6,
-                    id: 'financeRequestInvoice',
-                    name: 'financeRequestInvoice',
-                    label: 'Invoice Number *',
-                    labelWidth: 120,
-                    validate: {
-                        required: true,
-                        minlength: 4,
-                        maxlength: 10,
-                    }
+                    md: 4,
+                    lg: 4,
+                    id: 'financeRequestExpenseTypeNonJobRelated',
+                    name: 'financeRequestExpenseTypeNonJobRelated',
                 },
                 {
-                    ...getRegisteredFormField.number,
-                    md: 6,
-                    lg: 6,
-                    id: 'financeRequestQuantity',
-                    name: 'financeRequestQuanity',
-                    label: 'Quantity *',
-                    labelWidth: 80,
-                    validate: {
-                        required: true,
-                        minlength: 4,
-                        maxlength: 10,
-                    }
+                    ...getRegisteredFormField.financeRequestDepartment,
+                    md: 4,
+                    lg: 4,
+                    id: 'financeRequestDepartmentNonJobRelated',
+                    name: 'financeRequestDepartmentNonJobRelated',
                 },
             ],
             [
                 {
                     ...getRegisteredFormField.amountText,
-                    md: 6,
-                    lg: 6,
-                    id: 'financeRequestPaymentValue',
-                    name: 'financeRequestPaymentValue',
+                    md: 4,
+                    lg: 4,
+                    id: 'financeRequestPaymentValueNonJobRelated',
+                    name: 'financeRequestPaymentValueNonJobRelated',
                     label: 'Payment Value *',
                     labelWidth: 120,
                     validate: {
@@ -74,8 +56,33 @@ export const NonJobRelatedFormFieldList = [
                 },
                 {
                     ...getRegisteredFormField.financeRequestPaymentRate,
-                    md: 6,
-                    lg: 6,
+                    md: 4,
+                    lg: 4,
+                    id: 'financeRequestPaymentRateNonJobRelated',
+                    name: 'financeRequestPaymentRateNonJobRelated',
+                },
+                {
+                    ...getRegisteredFormField.number,
+                    md: 4,
+                    lg: 4,
+                    id: 'financeRequestQuantityNonJobRelated',
+                    name: 'financeRequestQuantityNonJobRelated',
+                    label: 'Quantity *',
+                    labelWidth: 80,
+                    validate: {
+                        required: true,
+                    }
+                },
+            ],
+            [
+                {
+                    ...getRegisteredFormField.descriptionText,
+                    md: 4,
+                    lg: 4,
+                    id: 'financeRequestDescriptionNonJobRelated',
+                    name: 'financeRequestDescriptionNonJobRelated',
+                    label: 'Description *',
+                    labelWidth: 100,
                 },
             ],
             [
@@ -87,13 +94,16 @@ export const NonJobRelatedFormFieldList = [
                         <FlexBoxGrow 
                             items={[
                                 <UploadButton 
-                                    name="financeProofOfInvoice"
-                                    id="financeProofOfInvoice"
+                                    name="financeProformaInvoiceNonJobRelated"
+                                    id="financeProformaInvoiceNonJobRelated"
                                     label="Upload Proforma Invoice"
                                     {...props}
                                 />,
 
                                 <MainButton
+                                    icon={ArrowForwardIosIcon}
+                                    iconRight={true}
+                                    iconStyle={{ fontSize: '15px', margin: '0px 0px 0px 5px' }}
                                     label="Submit"
                                     {...props}
                                 />,
