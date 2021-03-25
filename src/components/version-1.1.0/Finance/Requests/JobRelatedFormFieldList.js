@@ -1,4 +1,5 @@
 import React from 'react';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 import { getRegisteredFormField } from '../../../../helpers/getRegisteredFormFields';
 import FlexBoxGrow from '../../Flexbox/FlexBoxGrow';
@@ -21,8 +22,8 @@ export const JobRelatedFormFieldList = [
                 },
                 {
                     ...getRegisteredFormField.text,
-                    md: 4,
-                    lg: 4,
+                    md: 6,
+                    lg: 6,
                     id: 'financeRequestPurchaseOrderNumberJobRelated',
                     name: 'financeRequestPurchaseOrderNumberJobRelated',
                     label: 'Purchase Order Number *',
@@ -51,15 +52,15 @@ export const JobRelatedFormFieldList = [
             [
                 {
                     ...getRegisteredFormField.financeRequestExpenseType,
-                    md: 6,
-                    lg: 6,
+                    md: 4,
+                    lg: 4,
                     id: 'financeRequestExpenseTypeJobRelated',
                     name: 'financeRequestExpenseTypeJobRelated',
                 },
                 {
                     ...getRegisteredFormField.financeRequestDepartment,
-                    md: 6,
-                    lg: 6,
+                    md: 4,
+                    lg: 4,
                     id: 'financeRequestDepartmentJobRelated',
                     name: 'financeRequestDepartmentJobRelated',
                 },
@@ -102,8 +103,8 @@ export const JobRelatedFormFieldList = [
             [
                 {
                     ...getRegisteredFormField.descriptionText,
-                    md: 4,
-                    lg: 4,
+                    md: 12,
+                    lg: 12,
                     id: 'financeRequestDescriptionJobRelated',
                     name: 'financeRequestDescriptionJobRelated',
                     label: 'Description *',

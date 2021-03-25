@@ -77,8 +77,8 @@ export const NonJobRelatedFormFieldList = [
             [
                 {
                     ...getRegisteredFormField.descriptionText,
-                    md: 4,
-                    lg: 4,
+                    md: 12,
+                    lg: 12,
                     id: 'financeRequestDescriptionNonJobRelated',
                     name: 'financeRequestDescriptionNonJobRelated',
                     label: 'Description *',

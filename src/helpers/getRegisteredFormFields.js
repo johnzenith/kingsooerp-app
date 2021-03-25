@@ -647,7 +647,7 @@ export const getRegisteredFormField = {
         name:       'descriptionText',
         type:       'textarea',
         label:      'Description Text *',
-        icon:       BookmarksIcon,
+        icon:       EditIcon,
         labelWidth: 110,
         validate: {
             minlength: 10,
