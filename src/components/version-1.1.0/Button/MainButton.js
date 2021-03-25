@@ -38,6 +38,7 @@ function MainButton(props) {
 
     return (
         <Button 
+            type="button"
             variant="contained" 
             color="primary"
             {...props}

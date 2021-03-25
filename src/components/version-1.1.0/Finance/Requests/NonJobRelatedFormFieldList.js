@@ -92,6 +92,7 @@ export const NonJobRelatedFormFieldList = [
                     lg: 12,
                     content: props => (
                         <FlexBoxGrow 
+                            style={{ marginTop: '10px' }}
                             items={[
                                 <UploadButton 
                                     name="financeProformaInvoiceNonJobRelated"

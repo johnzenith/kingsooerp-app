@@ -52,15 +52,15 @@ export const JobRelatedFormFieldList = [
             [
                 {
                     ...getRegisteredFormField.financeRequestExpenseType,
-                    md: 4,
-                    lg: 4,
+                    md: 6,
+                    lg: 6,
                     id: 'financeRequestExpenseTypeJobRelated',
                     name: 'financeRequestExpenseTypeJobRelated',
                 },
                 {
                     ...getRegisteredFormField.financeRequestDepartment,
-                    md: 4,
-                    lg: 4,
+                    md: 6,
+                    lg: 6,
                     id: 'financeRequestDepartmentJobRelated',
                     name: 'financeRequestDepartmentJobRelated',
                 },
@@ -118,6 +118,7 @@ export const JobRelatedFormFieldList = [
                     lg: 12,
                     content: props => (
                         <FlexBoxGrow 
+                            style={{ marginTop: '10px' }}
                             items={[
                                 <UploadButton 
                                     name="financeProformaInvoiceJobRelated"

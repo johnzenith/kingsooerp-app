@@ -26,13 +26,13 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-function StepperTitle({ title, steps, activeStep, description = null }) {
+function StepperTitle({ title, steps, activeStep, description = null, style = {} }) {
     const classes         = useStyles();
     const stepDescription = steps?.[ activeStep ] ?? description;
 
     return (
         <Paper className={classes.paper} elevation={0}>
-            <div className={classes.description}>
+            <div className={classes.description} style={style}>
                 {title} 
                 {typeof stepDescription === 'string' && 
                     <>

@@ -15,7 +15,9 @@ import ReceiptIcon from '@material-ui/icons/Receipt';
 import HistoryIcon from '@material-ui/icons/History';
 
 import AddEmployeeForm from './../version-1.1.0/EmployeeManagement/AddEmployeeForm';
-import AddFinanceRequestForNonJobRelatedForm from './../version-1.1.0/Finance/Requests/NonJobRelatedForm';
+import AddFinanceRequestForNonJobRelatedForm from '../version-1.1.0/Finance/Requests/AddFinanceRequestForNonJobRelatedForm';
+
+import AddNewFinanceRequestForm from './../version-1.1.0/Finance/Requests/AddNewFinanceRequestForm';
 
 const cardItems = [
     {
@@ -73,7 +75,7 @@ export default function DashboardContent() {
 
             <Switch>
                 <Route exact path="/human-resource/dashboard" component={RenderDashboardCard} />
-                <Route path="/human-resource/employees-management" component={AddFinanceRequestForNonJobRelatedForm} />
+                <Route path="/human-resource/employees-management" component={AddNewFinanceRequestForm} />
                 <Route 
                     render={() => <Redirect to="/human-resource/dashboard" />}
                 />
