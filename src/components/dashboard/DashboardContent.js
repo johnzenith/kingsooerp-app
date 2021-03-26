@@ -18,7 +18,9 @@ import AddEmployeeForm from './../version-1.1.0/EmployeeManagement/AddEmployeeFo
 import AddFinanceRequestForNonJobRelatedForm from '../version-1.1.0/Finance/Requests/AddFinanceRequestForNonJobRelatedForm';
 
 import AddNewFinanceRequestForm from './../version-1.1.0/Finance/Requests/AddNewFinanceRequestForm';
-import FinanceReports from './../version-1.1.0/Finance/Reports/index';
+import FinanceReports from './../version-1.1.0/Finance/Reports';
+import FinanceRequest from './../version-1.1.0/Finance/Requests';
+import Finance from './../version-1.1.0/Finance';
 
 const cardItems = [
     {
@@ -76,7 +78,8 @@ export default function DashboardContent() {
 
             <Switch>
                 <Route exact path="/human-resource/dashboard" component={RenderDashboardCard} />
-                <Route path="/human-resource/employees-management" component={FinanceReports} />
+                <Route path="/human-resource/employees-management" component={Finance} />
+                <Route path="/finance/request/new" component={Finance} />
                 <Route 
                     render={() => <Redirect to="/human-resource/dashboard" />}
                 />

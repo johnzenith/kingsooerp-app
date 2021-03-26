@@ -392,7 +392,7 @@ export const getRegisteredFormField = {
             required: true,
         },
         items: [ 
-            { value: 'Approve' },
+            { value: 'Approved' },
             { value: 'Return' },
             { value: 'Denied' },
         ]
