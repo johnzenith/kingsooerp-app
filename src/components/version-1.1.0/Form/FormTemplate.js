@@ -13,8 +13,15 @@ import StepperTitle from './../Stepper/StepperTitle';
  * 
  * @param {object} props 
  */
-function FormTemplate({ formFieldsList, title = 'New Form', header = true, line = true, description = null }) {
+function FormTemplate(props) {
     const classes = useStyles();
+    const { 
+        formFieldsList, 
+        title = 'New Form', 
+        header = true, 
+        line = true, 
+        description = null,
+    } = props;
 
     const {
         forms
@@ -24,7 +31,7 @@ function FormTemplate({ formFieldsList, title = 'New Form', header = true, line 
             style: {
                 marginBottom: '15px',
             }
-        }
+        },
     });
 
     return forms.map((Form, index) => {
@@ -34,7 +41,7 @@ function FormTemplate({ formFieldsList, title = 'New Form', header = true, line 
                 <div style={{ marginTop: '-30px', width: '100%' }}>
                     <div 
                         key={`form_content_${index}`}
-                        className={clsx(elemClass, classes.stepContentWrapper, classes.formContent)}
+                        className={clsx('formContentWrapper', elemClass, classes.stepContentWrapper)}
                     >
                         {header && <StepperTitle 
                             {...{

@@ -24,7 +24,7 @@ function MainButton(props) {
         iconStyle = {},
     } = props;
 
-    const Icon = icon || AddIcon;
+    const Icon = (false === icon) ? false : (icon || AddIcon);
 
     const renderIcon = Icon && <Icon 
         style={{
